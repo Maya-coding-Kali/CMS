@@ -23,7 +23,7 @@ class Contact extends Component {
   };
   submitEmail = (e) => {
     e.preventDefault();
-    fetch("http://localhost:3000/contact", {
+    fetch("https://fringuante-monsieur-85595.herokuapp.com/contact", {
       method: "post",
       //  mode: "no-cors",
       headers: { "Content-Type": "application/json" },
