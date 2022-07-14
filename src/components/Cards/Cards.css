@@ -1,5 +1,8 @@
 .space{
     margin: 0 3em;
+    width: 400px !important;
+}
+.my-image{
 }
 .main-space{
     margin: 6em;
