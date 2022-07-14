@@ -6,6 +6,18 @@ import "./Cards.css"
 const Cards = () => {
   return (
     <article className="flex justify-center main-space flex-wrap ">
+    <div className="space">
+      <h3 className="tc">Smart-Brain App</h3>
+        <a
+          className=""
+          title=""
+          target={"_blank"} 
+            rel="noreferrer"
+          href="https://smart-brain987.herokuapp.com/"
+        >
+          <img className="db b--black br4 shadow-1 my-image" alt="SmtBrn" src={SmartBrain}></img>
+        </a>
+      </div>
       <div className="space">
           <h3 className="tc">Simon Game</h3>
         <a
@@ -30,18 +42,7 @@ const Cards = () => {
           <img className="db b--black br4 shadow-1 my-image" alt="Balloon" src={Balloon} ></img>
         </a>
       </div>
-      <div className="space">
-      <h3 className="tc">Smart-Brain App</h3>
-        <a
-          className=""
-          title=""
-          target={"_blank"} 
-            rel="noreferrer"
-          href="https://smart-brain987.herokuapp.com/"
-        >
-          <img className="db b--black br4 shadow-1 my-image" alt="SmtBrn" src={SmartBrain}></img>
-        </a>
-      </div>
+      
     </article>
   );
 };
