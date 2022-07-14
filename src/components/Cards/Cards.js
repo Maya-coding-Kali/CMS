@@ -15,7 +15,7 @@ const Cards = () => {
             rel="noreferrer"     
           href="http://maya.infinityfreeapp.com/Simon/index.html"
         >
-          <img className="db b--black br4 my-image" alt="Simon" src={simon}></img>
+          <img className="db b--black br4 shadow-1 my-image" alt="Simon" src={simon}></img>
         </a>
       </div>
       <div className="space">
