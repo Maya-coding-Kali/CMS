@@ -1,0 +1,20 @@
+
+.BlImage{
+    background-image: url("./img/Coding.jpg");
+    background-repeat: no-repeat;
+    background-position: center;    
+    background-attachment: fixed;  
+    color: rgb(236, 239, 255);
+    padding: 11em;
+    margin-top: 8em;
+    margin-bottom: 8em;
+}
+.about-text{
+  
+    margin: auto;
+}
+@media (max-width: 800px) {
+    .BlImage{
+        padding: 10em 3em;
+    }
+}
