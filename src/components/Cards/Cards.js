@@ -7,6 +7,7 @@ const Cards = () => {
   return (
     <article className="flex justify-center main-space flex-wrap ">
       <div className="space">
+          <h3 className="tc">Simon Game</h3>
         <a
           className=""
           title=""     
@@ -14,7 +15,6 @@ const Cards = () => {
             rel="noreferrer"     
           href="http://maya.infinityfreeapp.com/Simon/index.html"
         >
-          <h3 className="tc">Simon Game</h3>
           <img className="db b--black br4 my-image" alt="Simon" src={simon}></img>
         </a>
       </div>
