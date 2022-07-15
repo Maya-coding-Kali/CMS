@@ -39,6 +39,7 @@ class Contact extends Component {
         console.log("Hello love " + data);
         if (data.status === "success") {
           alert("Message Sent Successful");
+          e.target.reset();
         } else if (data.status === "fail") {
           alert("Message Failed to contact");
         }
