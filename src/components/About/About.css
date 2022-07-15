@@ -4,17 +4,26 @@
     background-repeat: no-repeat;
     background-position: center;    
     background-attachment: fixed;  
+    background-size: 100em;
     color: rgb(236, 239, 255);
     padding: 11em;
-    margin-top: 8em;
-    margin-bottom: 8em;
+    margin: 8em;
 }
 .about-text{
   
     margin: auto;
 }
+@media (max-width: 1200px) {
+    .BlImage{
+        background-size: 90em;
+        margin: 2em 1em;
+    }
+}
+
 @media (max-width: 800px) {
     .BlImage{
-        padding: 10em 3em;
+        background-size: 60em;
+        margin: 2em 1em;
+        
     }
 }
