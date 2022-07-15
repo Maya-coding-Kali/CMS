@@ -23,6 +23,7 @@ class Contact extends Component {
   };
   submitEmail = (e) => {
     e.preventDefault();
+    e.target.reset();
     fetch("https://fringuante-monsieur-85595.herokuapp.com/contact", {
       method: "post",
       //  mode: "no-cors",
@@ -39,7 +40,7 @@ class Contact extends Component {
         console.log("Hello love " + data);
         if (data.status === "success") {
           alert("Message Sent Successful");
-          e.target.reset();
+          
         } else if (data.status === "fail") {
           alert("Message Failed to contact");
         }
