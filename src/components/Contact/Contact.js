@@ -22,8 +22,8 @@ class Contact extends Component {
     this.setState({ message: event.target.value });
   };
   submitEmail = (e) => {
-    e.preventDefault();
-    e.target.reset();
+    console.log("You got this")
+    document.getElementById("Contact").reset();
     fetch("https://fringuante-monsieur-85595.herokuapp.com/contact", {
       method: "post",
       //  mode: "no-cors",
@@ -37,7 +37,6 @@ class Contact extends Component {
     })
       .then((response) => response.json())
       .then((data) => {
-        console.log("Hello love " + data);
         if (data.status === "success") {
           alert("Message Sent Successful");
           
@@ -52,7 +51,7 @@ class Contact extends Component {
   render() {
     return (
       <article className="pa4 ma5 black-80 flex justify-center">
-        <form className="shadow-1 pa4">
+        <form className="shadow-1 pa4" id="Contact">
           <fieldset id="contact_me" className="ba b--transparent ph0 mh0 ">
             <legend className="ph0 mh0 fw6 underline">Contact:</legend>
             <div className="mt3 ">
@@ -60,6 +59,7 @@ class Contact extends Component {
                 First Name
               </label>
               <input
+           
                 className="pa2 input-reset ba bg-transparent w-100 measure"
                 type="text"
                 name="firstName"
@@ -110,6 +110,7 @@ class Contact extends Component {
               type="button"
               value="submit"
               onClick={this.submitEmail}
+              
             ></input>
           </div>
         </form>
