@@ -4,12 +4,12 @@
 }
 .my-image{
     /* transition: transform .955558s; */
-    transition:   50s ;
+    transition: 100s ;
     border: solid black .00000001px;
  
 }
 .my-image:hover{
-    transform: rotate(140040deg)  scale3d(1.1, 1.1, 1.1);
+    transform: rotate(140040deg)  scale(1.1);
     box-shadow: 10px 10px 5px #333;   
 }
 .main-space{
