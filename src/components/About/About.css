@@ -74,7 +74,7 @@
     z-index: 1;
   }
   .overlay {
-    padding: 5em ;
+    padding: 5em;
     background: rgba(0, 0, 0, 0.6);
     position: relative;
     width: 100%;
@@ -100,15 +100,12 @@
 @media (max-width: 500px) {
   .BlImage {
     background-size: 65em;
-    
   }
   .parent {
     width: 80%;
-    margin: 1em auto;
+    margin: 2em auto;
     overflow: hidden;
     z-index: 1;
-    padding: 2em;
-
   }
   .overlay {
     padding: 2em;
@@ -118,22 +115,19 @@
   }
 }
 @media (max-width: 350px) {
-    .BlImage {
-      background-size: 85em;
-      
-    }
-    .parent {
-      width: 80%;
-      margin: 1em auto;
-      overflow: hidden;
-      z-index: 1;
-      padding: 2em;
-  
-    }
-    .overlay {
-      padding: 1em;
-      background: rgba(0, 0, 0, 0.6);
-      position: relative;
-      width: 100%;
-    }
+  .BlImage {
+    background-size: 85em;
   }
+  .parent {
+    width: 80%;
+    margin: 0.5em auto;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .overlay {
+    padding: 1em;
+    background: rgba(0, 0, 0, 0.6);
+    position: relative;
+    width: 100%;
+  }
+}
