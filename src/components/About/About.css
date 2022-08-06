@@ -12,8 +12,7 @@
   background-position: center;
   background-size: cover;
   color: rgb(236, 239, 255);
-  transition: all .9s ease-in;
-  
+  transition: all 0.5s ease-in;
   z-index: -1;
   background-image: url("./img/Coding.jpg");
 }
@@ -22,19 +21,14 @@
   background: rgba(0, 0, 0, 0.6);
   position: relative;
   width: 100%;
-  transition: .5s;
-  
-
 }
-.overlay:hover{
-    background: rgba(0, 0, 0, 0.8);
-
+.overlay:hover {
+  background: rgba(0, 0, 0, 0.8);
 }
 .BlImage:hover {
-    
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
-  
+
 .about-text {
   width: 100%;
   margin: auto;
@@ -43,33 +37,103 @@
 @media (max-width: 1200px) {
   .BlImage {
     background-size: 90em;
-    margin: 2em 1em;
+  }
+  .overlay {
+    padding: 9em;
+    background: rgba(0, 0, 0, 0.6);
+    position: relative;
+    width: 100%;
   }
 }
 @media (max-width: 1000px) {
+  .parent {
+    margin: 2em 1em;
+    width: 80%;
+    margin: 1em auto;
+    overflow: hidden;
+    z-index: 1;
+  }
   .BlImage {
     background-size: 70em;
-    margin: 2em 1em;
+  }
+  .overlay {
+    padding: 9em;
+    background: rgba(0, 0, 0, 0.6);
+    position: relative;
+    width: 100%;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 810px) {
   .BlImage {
     background-size: 60em;
-    margin: 2em 1em;
-    padding: 8em 1em;
+  }
+  .parent {
+    width: 80%;
+    margin: 1em auto;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .overlay {
+    padding: 5em ;
+    background: rgba(0, 0, 0, 0.6);
+    position: relative;
+    width: 100%;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 616px) {
   .BlImage {
-    background-size: 40em;
-    margin: 2em 1em;
-    padding: 8em 1em;
+    background-size: 60em;
+  }
+  .parent {
+    width: 80%;
+    margin: 1em auto;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .overlay {
+    padding: 5em;
+    background: rgba(0, 0, 0, 0.6);
+    position: relative;
+    width: 100%;
   }
 }
 @media (max-width: 500px) {
   .BlImage {
-    background-size: 35em;
-    margin: 3em 1em;
-    padding: 5em 1em;
+    background-size: 65em;
+    
+  }
+  .parent {
+    width: 80%;
+    margin: 1em auto;
+    overflow: hidden;
+    z-index: 1;
+    padding: 2em;
+
+  }
+  .overlay {
+    padding: 2em;
+    background: rgba(0, 0, 0, 0.6);
+    position: relative;
+    width: 100%;
   }
 }
+@media (max-width: 350px) {
+    .BlImage {
+      background-size: 85em;
+      
+    }
+    .parent {
+      width: 80%;
+      margin: 1em auto;
+      overflow: hidden;
+      z-index: 1;
+      padding: 2em;
+  
+    }
+    .overlay {
+      padding: 1em;
+      background: rgba(0, 0, 0, 0.6);
+      position: relative;
+      width: 100%;
+    }
+  }
