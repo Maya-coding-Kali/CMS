@@ -3,7 +3,9 @@ import "./About.css";
 const About = () => {
   return (
     <article>
+    <div className="parent">
       <div className="tc BlImage">
+      <div className="overlay">
         <h2 className="underline tc f2">About</h2>
         <p className="about-text">
           Web developer with a passion for web application development and
@@ -13,8 +15,9 @@ const About = () => {
           innovation with the ability to follow industry and technological
           trends, and facilitating early adoption of innovations.
         </p>
+        </div>
       </div>
-      \
+      </div>
     </article>
   );
 };

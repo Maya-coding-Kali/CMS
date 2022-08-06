@@ -3,6 +3,14 @@
     width: 400px !important;
 }
 .my-image{
+    /* transition: transform .955558s; */
+    transition:   1s cubic-bezier(0.5, 0.8, 0.02, 3)  ;
+ 
+}
+.my-image:hover{
+    
+    transform: rotate(1440deg)  scale3d(1.1, 1.1, 1.5);
+    box-shadow: 6px 4px 10px #999;   
 }
 .main-space{
     margin: 6em;
