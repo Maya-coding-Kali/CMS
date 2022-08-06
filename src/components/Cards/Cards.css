@@ -4,7 +4,7 @@
 }
 .my-image{
     /* transition: transform .955558s; */
-    transition:   100s cubic-bezier(0.1, 4.01, .02, 3)  ;
+    transition:   50s ;
     border: solid black .00000001px;
  
 }
