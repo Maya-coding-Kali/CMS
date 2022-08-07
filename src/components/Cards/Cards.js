@@ -6,7 +6,7 @@ import "./Cards.css";
 const Cards = () => {
   return (
     <div>
-      <h1 className="tc underline ma5">Projects</h1>
+      {/* <h1 className="tc underline ma5">Projects</h1> */}
       <article className="flex justify-center main-space flex-wrap ">
         <div className="space">
           <h3 className="tc">Smart-Brain App</h3>
