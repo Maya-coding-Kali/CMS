@@ -22,7 +22,7 @@ class Contact extends Component {
     this.setState({ message: event.target.value });
   };
   submitEmail = (e) => {
-    console.log("You got this")
+    console.log("You got this");
     document.getElementById("Contact").reset();
     fetch("https://fringuante-monsieur-85595.herokuapp.com/contact", {
       method: "post",
@@ -39,7 +39,6 @@ class Contact extends Component {
       .then((data) => {
         if (data.status === "success") {
           alert("Message Sent Successful");
-          
         } else if (data.status === "fail") {
           alert("Message Failed to contact");
         }
@@ -50,71 +49,73 @@ class Contact extends Component {
   };
   render() {
     return (
-      <article className="pa4 ma5 black-80 flex justify-center">
-        <form className="shadow-1 pa4" id="Contact">
-          <fieldset id="contact_me" className="ba b--transparent ph0 mh0 ">
-            <legend className="ph0 mh0 fw6 underline">Contact:</legend>
-            <div className="mt3 ">
-              <label className="db fw4 lh-copy f6" htmlFor="firstName">
-                First Name
-              </label>
+      <div>
+        <h1 className="tc mt5 underline">Under Construction</h1>
+        <article className="pa4 ma5 black-80 flex justify-center ">
+          <form className="shadow-1 pa4" id="Contact">
+            <fieldset id="contact_me" className="ba b--transparent ph0 mh0 ">
+              <legend className="ph0 mh0 fw6 underline">Contact:</legend>
+              <div className="mt3 ">
+                <label className="db fw4 lh-copy f6" htmlFor="firstName">
+                  First Name
+                </label>
+                <input
+                  className="pa2 input-reset ba bg-transparent w-100 measure"
+                  type="text"
+                  name="firstName"
+                  id="firstName"
+                  onChange={this.onFirstNameChange}
+                ></input>
+              </div>
+              <div className="mt3 ">
+                <label className="db fw4 lh-copy f6" htmlFor="lastName">
+                  Last Name
+                </label>
+                <input
+                  className="pa2 input-reset ba bg-transparent w-100 measure"
+                  type="text"
+                  name="lastName"
+                  id="lastName"
+                  onChange={this.onLastNameChange}
+                ></input>
+              </div>
+              <div className="mt3 ">
+                <label className="db fw4 lh-copy f6" htmlFor="email">
+                  Email address
+                </label>
+                <input
+                  className="pa2 input-reset ba bg-transparent w-100 measure"
+                  type="text"
+                  name="email"
+                  id="email"
+                  onChange={this.onEmailChange}
+                ></input>
+              </div>
+              <div className="mt3 ">
+                <label className="db fw4 lh-copy f6 " htmlFor="message">
+                  Reason For Connecting
+                </label>
+                <textarea
+                  className="b pa2 input-reset ba bg-transparent"
+                  type="textarea"
+                  name="message"
+                  id="message"
+                  onChange={this.onMessageChange}
+                ></textarea>
+              </div>
+            </fieldset>
+            <div className="mt3">
               <input
-           
-                className="pa2 input-reset ba bg-transparent w-100 measure"
-                type="text"
-                name="firstName"
-                id="firstName"
-                onChange={this.onFirstNameChange}
+                className="b ph3 pv2 input-reset ba b--black bg-transparent  pointer f6"
+                type="button"
+                value="submit"
+                onClick={this.submitEmail}
+                disabled
               ></input>
             </div>
-            <div className="mt3 ">
-              <label className="db fw4 lh-copy f6" htmlFor="lastName">
-                Last Name
-              </label>
-              <input
-                className="pa2 input-reset ba bg-transparent w-100 measure"
-                type="text"
-                name="lastName"
-                id="lastName"
-                onChange={this.onLastNameChange}
-              ></input>
-            </div>
-            <div className="mt3 ">
-              <label className="db fw4 lh-copy f6" htmlFor="email">
-                Email address
-              </label>
-              <input
-                className="pa2 input-reset ba bg-transparent w-100 measure"
-                type="text"
-                name="email"
-                id="email"
-                onChange={this.onEmailChange}
-              ></input>
-            </div>
-            <div className="mt3 ">
-              <label className="db fw4 lh-copy f6 " htmlFor="message">
-                Reason For Connecting
-              </label>
-              <textarea
-                className="b pa2 input-reset ba bg-transparent"
-                type="textarea"
-                name="message"
-                id="message"
-                onChange={this.onMessageChange}
-              ></textarea>
-            </div>
-          </fieldset>
-          <div className="mt3">
-            <input
-              className="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6"
-              type="button"
-              value="submit"
-              onClick={this.submitEmail}
-              
-            ></input>
-          </div>
-        </form>
-      </article>
+          </form>
+        </article>
+      </div>
     );
   }
 }
