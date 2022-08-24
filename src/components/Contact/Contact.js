@@ -50,7 +50,7 @@ class Contact extends Component {
   render() {
     return (
       <div>
-        <h1 className="tc mt5 underline">Under Construction</h1>
+       
         <article className="pa4 ma5 black-80 flex justify-center ">
           <form className="shadow-1 pa4" id="Contact">
             <fieldset id="contact_me" className="ba b--transparent ph0 mh0 ">
