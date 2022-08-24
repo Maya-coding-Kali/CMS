@@ -110,7 +110,7 @@ class Contact extends Component {
                 type="button"
                 value="submit"
                 onClick={this.submitEmail}
-                disabled
+                
               ></input>
             </div>
           </form>
