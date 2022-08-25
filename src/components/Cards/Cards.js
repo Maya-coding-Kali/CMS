@@ -34,7 +34,7 @@ const Cards = () => {
             title=""
             target={"_blank"}
             rel="noreferrer"
-            href="https://github.com/Maya-coding-Kali/SpaceShooter-Sample"
+            href="https://github.com/Maya-coding-Kali/SpaceShooter-Sample"//this
           >
             <img
               className="db b--black br4 shadow-1 my-image"
