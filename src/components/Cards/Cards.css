@@ -6,7 +6,8 @@
     /* transition: transform .955558s; */
     transition: 100s ;
     border: solid black .00000001px;
- 
+  
+    
 }
 .my-image:hover{
     transform: rotate(140040deg)  scale(1.1);
